@@ -17,5 +17,5 @@
 
 ●	Handling & (Background processes)
 
-○	As stated previously, the loop that looks for the tokens < and > also looks for the token &. This changes the corresponding int variable bg to 1.
+○	As stated previously, the loop that looks for the tokens < and > also looks for the token &. This changes the corresponding int variable bg to 1
 ○	When the program gets to the next loop, it looks to see if the bg int variable is set to 1 and if it is, it runs the signal() method and kills the zombie process.
