@@ -13,6 +13,7 @@
 ●	Handling both < and > (Input file and Output file)
 
 ○	We created a loop that looked through all the tokens for <, > and &. When the loop found a < or a >, it set a corresponding int variable, either the variable in or the variable out,  to 1 and set the char* variable for filename to the next token. The loop then removed the tokens from the token array. 
+
 ○	When the program finishes with the previous loop, the program goes to another loop. In this loop it first checks if any of the int variables corresponding to the input files or output files are set to 1. If they are, then the program runs the freopen() method and changes the filestream for that child process. It then runs the tokens left in the token array.
 
 ●	Handling & (Background processes)
